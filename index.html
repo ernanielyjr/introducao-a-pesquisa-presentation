@@ -20,14 +20,135 @@
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <style>
+    .reveal section img {
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+    }
+
     .reveal blockquote {
       width: 80%;
+    }
+
+    .notes ul >li {
+      font-size: 10px;
     }
 
     .references > li {
       font-size: 18px;
       margin-bottom: 15px;
       font-weight: normal;
+    }
+
+    .formatacao {
+      background: #FFF;
+      padding: 20px !important;
+      margin-bottom: 20px !important;
+    }
+
+    .formatacao .destaque {
+      background-color: rgba(255, 255, 0, 0.5);
+    }
+
+    .formatacao h1 {
+      font-size: 20pt !important;
+      color: #000 !important;
+      text-align: center !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      text-transform: uppercase !important;
+      text-shadow: none !important;
+      font-weight: bold !important;
+      margin: 0 0 30pt 0 !important;
+    }
+
+    .formatacao h2 {
+      font-size: 12pt !important;
+      color: #000 !important;
+      text-align: left !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      text-transform: uppercase !important;
+      text-shadow: none !important;
+      font-weight: bold !important;
+      margin: 0 0 18pt 0 !important;
+    }
+
+    .formatacao h3 {
+      font-size: 12pt !important;
+      color: #000 !important;
+      text-align: left !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      text-transform: uppercase !important;
+      text-shadow: none !important;
+      font-weight: normal !important;
+      margin: 0 0 18pt 0 !important;
+    }
+
+    .formatacao h4 {
+      font-size: 12pt !important;
+      color: #000 !important;
+      text-align: left !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      text-transform: initial !important;
+      text-shadow: none !important;
+      font-weight: normal !important;
+      margin: 0 0 18pt 0 !important;
+    }
+
+    .formatacao p {
+      margin: 0 !important;
+    }
+
+    .formatacao .texto-padrao {
+      font-size: 12pt !important;
+      text-indent: 1.24cm !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      color: #000 !important;
+      text-align: justify !important;
+      line-height: 1.5 !important;
+    }
+
+    .formatacao .texto-nomes {
+      text-align: right !important;
+      font-weight: bold !important;
+    }
+
+    .formatacao .texto-rodape {
+      text-indent: 0 !important;
+      text-align: center !important;
+    }
+
+    .formatacao .texto-resumo {
+      text-indent: 0 !important;
+      font-style: italic !important;
+      line-height: 1.15 !important;
+    }
+
+    .formatacao .texto-palavras-chave {
+      text-indent: 0 !important;
+      font-weight: bold !important;
+    }
+
+    .formatacao .citacao-longa {
+      text-indent: 0 !important;
+      padding-left: 4cm !important;
+    }
+
+    .formatacao .referencias {
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      list-style: none !important;
+    }
+
+    .formatacao .referencias > li {
+      font-size: 12pt !important;
+      text-indent: 0 !important;
+      font-family: 'Times New Roman', Times, serif !important;
+      color: #000 !important;
+      text-align: left !important;
+      line-height: 1.5 !important;
+      padding: 0 !important;
+      margin: 0 0 18pt 0 !important;
     }
   </style>
 </head>
@@ -59,7 +180,7 @@
           problemas que são propostos. A pesquisa desenvolve-se por um processo constituído de várias fases, desde
           a formulação do problema até a apresentação e discussão dos resultados.&rdquo;
         </blockquote>
-        <small>GIL (2007, p. 17)</small>
+        <small>GIL, Antonio Carlos (2007, p. 17)</small>
       </section>
 
       <section data-background="radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), #19a68c" data-background-size="cover">
@@ -67,27 +188,153 @@
 
         <section>
           <h3>PESQUISA QUALITATIVA</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="./img/pesquisa-qualitativa.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>Normalmente número pequeno de entrevistados</li>
+              <li>Cenários que auxiliam a compreender o comportamento dos entrevistados</li>
+              <li>Explicar o porquê das coisas</li>
+              <li>Não considera um grande volume de dados</li>
+              <li>Não submete à prova de fatos</li>
+              <li>Não são mensuráveis</li>
+              <li>Utiliza diferentes abordagens</li>
+              <li>Entrevistados se “sentem” mais a vontade de comentar</li>
+              <li>As respostas não são objetivas</li>
+              <li>Os entrevistados podem responder as perguntas livremente sem ter o sentimento de estarem prejudicando a empresa/produto/ferramenta</li>
+              <li>Ex.: O que faz um cliente comprar novamente na mesma empresa?</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>PESQUISA QUANTITATIVA</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="./img/pesquisa-quantitativa.png" />
+          <small>
+            Amostragem de 6.141 usuários unicos.<br />
+            <small>
+              <br />Fonte:
+              <a href="http://woop-analytics.prd-sicredi.in/dashboard/caracter-sticas-dos-woopers" target="_blank">
+                http://woop-analytics.prd-sicredi.in/dashboard/caracter-sticas-dos-woopers
+              </a>
+              <em>(acesso restrito)</em>
+            </small>
+          </small>
+
+          <aside class="notes">
+            <ul>
+              <li>Focada em indivíduos que pertencem a um grupo ou sociedade específica</li>
+              <li>Se baseia em amostragens e representativas</li>
+              <li>Em geral retrata o mundo real do grupo/sociedade</li>
+              <li>Usado para elaborar estatísticas, por exemplo</li>
+              <li>Índices numéricos que apontam comportamentos, preferências, atitudes, desempenhos, e outras ações</li>
+              <li>Realizada de maneira bem guiada para evitar inconsistencias</li>
+              <li>O questionamento deve ser bem funcamentados</li>
+              <li>Ex.: Qual a marca de televisão mais comprada no Brasil?</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>PESQUISA DESCRITIVA</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="./img/pesquisa-descritiva.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>Visa o estudo, a análise, o registro e a interpretação dos fatos</li>
+              <li>É utilizada em pesquisas mercadológicas e de opinião</li>
+              <li>Sem interferência da empresas nem do pesquisador</li>
+              <li>Propósito é descobrir a frequência que um o fenômeno acontece</li>
+              <li>Também procura descobrir como está estruturado ou funcionamento de uma empresa/instituiçã/sistema/método</li>
+              <li>Ex.: Porque os funcionários não ficam mais de 1 ano na Empresa X?</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>PESQUISA EXPLORATÓRIA</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="./img/pesquisa-exploratoria.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>Visa aprofundar o conhecimento sobre determinado objeto, organismo ou fenômeno</li>
+              <li>Depois de se familiarizar com o objeto é possível formular as hipóteses da pesquisa</li>
+              <li>As hipoteses serão cruciais para que obtenha-se um resultado mensurável</li>
+              <li>Pode ser a base para as perguntas de uma pesquisa quantitativa</li>
+              <li>Varios métodos diferentes: levantamento bibliográfico, entrevistas com especialistas, análise de exemplos parecidos ou pesquisas de campo.</li>
+              <li>É comum extrair importantes descobertas científicas</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>PESQUISA EXPLICATIVA</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="./img/pesquisa-explicativa.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>Esse é um tipo de pesquisa mais complexa, normalmente o "amadurecimento" de uma prévia pesquisa descritiva ou exploratória. Por esse motivo, costuma ser mais comum em teses de doutorado ou mestrado.</li>
+              <li>O principal objetivo é explicar e racionalizar o objeto de estudo. Busca a construção de um conhecimento totalmente novo. Para isso, é preciso a junção de uma grande quantidade de dados bibliográficos e resultados obtidos a partir de pesquisas experimentais, por exemplo.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>PESQUISA EXPERIMENTAL</h3>
+          <img src="./img/pesquisa-experimental.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>Ela é praticamente um padrão nas explorações de laboratório, é o procedimento em que se manipula variáveis para avaliar o impacto de uma sobre outra.</li>
+              <li>Normalmente separa-se dois grupos: um deles fica isolado, enquanto outro sofre a influência de uma determinada variável. Depois realiza-se uma comparação entre ambos os grupos, para avaliar o impacto da variável.</li>
+              <li>Imagine, por exemplo, que o autor busque descobrir qual é o impacto da ergonomia na produtividade dos profissionais de tecnologia.</li>
+              <li>Para isso, ele deverá procurar dois grupos desses profissionais, depois garantir o uso da ergonomia para um e para o outro evitá-lo. Em seguida bastará comparar os níveis de produtividade deles.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>PESQUISA EX POST FACTO</h3>
+          <img src="./img/pesquisa-ex-post-facto.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>É a que ocorre depois da ocorrência dos fenômenos.</li>
+              <li>A pesquisa ex post facto o autor não tem controle sobre todas as variáveis, pois elas já agiram.</li>
+              <li>A investigação ex post facto tem cabimento quando verifica-se, em momento futuro, que uma determinada variável influenciou algum objeto, sujeito ou fenômeno.</li>
+              <li>A variável de que não se tem controle pode ser a implantação de uma indústria, a realização de uma obra, a adoção de uma legislação numa cidade, por exemplo.</li>
+              <li>Nesse caso, o autor deveria encontrar uma cidade com as mesmas características e que não tenha sofrido a influência dessa variável.</li>
+              <li>A partir daí o autor conduz o “experimento”, comparando o impacto da existência e da ausência da variável nos dois objetos (ambas as cidades).</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>PESQUISA DE CAMPO</h3>
+          <img src="./img/pesquisa-de-campo.png" />
+
+          <aside class="notes">
+            <ul>
+              <li>É aquela em que o autor vai pessoalmente à realidade estudada e coleta, diretamente, os dados.</li>
+              <li>Esse método se contrapõe à exploração de laboratório, em que o autor tem controle pleno das variáveis. Na pesquisa de campo o objetivo é identificar os fenômenos no mundo natural, sem que o autor tenha qualquer controle sobre as variáveis.</li>
+              <li>Mesmo assim, como em todas os outros procedimentos, exige-se a realização de uma exploração bibliográfica sobre o assunto estudado.</li>
+              <li>Porém, o autor também precisa definir como coletará os dados. Também, qual será a amostra estudada, bem como a forma de registro e análise dos dados.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>PESQUISA DE LEVANTAMENTO</h3>
+          <img src="./img/pesquisa-de-levantamento.jpg" />
+
+          <aside class="notes">
+            <ul>
+              <li>É que visa conhecer os comportamentos de uma população. Esse procedimento é realizado mediante consulta direta às pessoas, normalmente por meio de questionários, por amostragem.</li>
+              <li>As análises de intenção de votos, por exemplo, são consideradas levantamentos.</li>
+              <li>O levantamento carece da utilização de técnicas estatísticas, caracterizando-se como quantitativa, de modo a permitir a generalização dos resultados.</li>
+              <li>Como é padrão nas pesquisas quantitativas, o levantamento não permite o detalhamento do fenômeno estudado, mas identifica seus aspectos gerais.</li>
+            </ul>
+          </aside>
         </section>
 
       </section>
@@ -96,49 +343,255 @@
         <h2>ESTRUTURA E ELABORAÇÃO</h2>
 
         <section>
-          <h3>DADOS DO TRABALHO E RODAPÉ</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h3>DADOS DO ARTIGO E RODAPÉ</h3>
+
+          <div class="formatacao" contenteditable="true">
+            <h1>TÍTULO DO ARTIGO</h1>
+            <p class="texto-padrao texto-nomes">Nome do Integrante A</p>
+            <p class="texto-padrao texto-nomes">Nome do Integrante B</p>
+            <p class="texto-padrao texto-nomes">Nome do Integrante C</p>
+            <p class="texto-padrao texto-nomes">&nbsp;</p>
+            <p class="texto-padrao texto-nomes">Tutor Externo: Nome do Tutor</p>
+
+            <p class="texto-padrao">
+              <em>(...)<br />&nbsp;</em>
+            </p>
+
+            <p class="texto-padrao texto-rodape">
+              Centro Universitário Leonardo da Vinci – UNIASSELVI<br />
+              Análise e desenvolvimento de Sistemas (ADS0067) – Prática módulo II
+            </p>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>Norma NBR-6023/2002 da ABNT</li>
+              <li>Título: tema proposto no trabalho, centralizado, tamanho 20, maiúsculo e negrito</li>
+              <li>Acadêmicos: nome dos elaboradores do trabalho, abaixo o título, alinhado à direita, tamanho 12, negrito, primeiras letras maiúsculas</li>
+              <li>Tutor: nome do professor, abaixo dos nomes e mesma formatação</li>
+              <li>Rodapé da primeira página: nome da instituição, nome da turma, nome da disciplina</li>
+              <li>Corpos do texto: tamanho padrão para os textos é 12, sem negrito, cor preta, espaçamento de 1,5, recuo e tipografia Times New Roman.</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>RESUMO</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+
+          <div class="formatacao" contenteditable="true">
+            <h2>RESUMO</h2>
+            <p class="texto-padrao texto-resumo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+              sagittis ornare risus non ultricies. Aliquam sed ullamcorper leo, ut mollis justo. Vestibulum hendrerit, nunc
+              ac bibendum venenatis, mi purus congue nulla, gravida maximus nulla lectus non ipsum. Donec lacinia, orci
+              aliquet elementum dictum, tortor ipsum rhoncus massa, vel accumsan massa libero non lacus. Fusce nec lorem eu
+              massa viverra condimentum quis at metus. Etiam porta varius metus ut ultrices. Suspendisse fermentum purus in
+              nulla tempus porta. Donec ullamcorper erat fermentum, semper urna non, consectetur odio. Maecenas quam ex,
+              fermentum et mauris non, varius elementum augue. Suspendisse varius ex sed tempor semper. Aliquam id pharetra
+              elit. Vivamus dapibus risus leo, dapibus facilisis lectus pulvinar semper.
+            </p>
+            <p class="texto-padrao texto-palavras-chave">
+              &nbsp;<br />
+              Palavras-chave: Lorem ipsum. Dolor sit amet. Consectetur adipiscing.
+            </p>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>título padrão</li>
+              <li>corpo do texto: formatação padrao, porém sem recuo, com espaçamento simples e em itálico</li>
+              <li>maximo 250 palavras</li>
+              <li>texto coerente e não uma sequência de frases dispersas</li>
+              <li>palavras-chave: 3 a 5 termos que representam o tema proposto</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>INTRODUÇÃO</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+
+          <div class="formatacao" contenteditable="true">
+            <h2>1. INTRODUÇÃO</h2>
+            <p class="texto-padrao texto-introducao">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+              sagittis ornare risus non ultricies. Aliquam sed ullamcorper leo, ut mollis justo. Vestibulum hendrerit, nunc
+              ac bibendum venenatis, mi purus congue nulla, gravida maximus nulla lectus non ipsum. Donec lacinia, orci
+              aliquet elementum dictum, tortor ipsum rhoncus massa, vel accumsan massa libero non lacus. Fusce nec lorem eu
+              massa viverra condimentum quis at metus. Etiam porta varius metus ut ultrices.
+            </p>
+            <p class="texto-padrao texto-introducao">
+              Etiam in orci semper, imperdiet felis in, efficitur odio. Nunc venenatis vehicula nisi eget dignissim. Sed
+              bibendum sem et neque rutrum tincidunt. Donec at ligula quis nisl vestibulum vestibulum. In non sapien eros.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis erat nec justo elementum, ut
+              ultrices sem elementum. Maecenas vitae porta nisl. Sed mollis maximus gravida. In est tortor, commodo at
+              commodo ac, rhoncus quis augue. Mauris placerat ultrices neque non consectetur.
+            </p>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>título padrão</li>
+              <li>apresentar a temática do assunto e o problema abordado</li>
+              <li>texto deve ser claro, conciso, delimitado, e objetivo</li>
+              <li>nao mencionar os resultados obtidos (sem spoiler)</li>
+              <li>mencionar a estrutura do trabalho (títulos e subtítulos)</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>DESENVOLVIMENTO</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+
+          <div class="formatacao" contenteditable="true">
+            <h2>2. TÍTULO</h2>
+            <p class="texto-padrao">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+              sagittis ornare risus non ultricies. Aliquam sed ullamcorper leo, ut mollis justo.
+              <br />&nbsp;
+            </p>
+            <h3>2.1 SUBTÍTULO</h3>
+            <p class="texto-padrao">
+              Etiam in orci semper, imperdiet felis in, efficitur odio. Nunc venenatis vehicula nisi eget dignissim. Sed
+              bibendum sem et neque rutrum tincidunt. Donec at ligula quis nisl vestibulum vestibulum.
+              <br />&nbsp;
+            </p>
+            <h4>2.1.1 Sub-subtítulo</h4>
+            <p class="texto-padrao">
+              Mauris suscipit viverra sem, vel rhoncus arcu convallis at. Pellentesque nunc arcu, facilisis in sodales ut,
+              pellentesque sed leo. Quisque sem leo, porta in sodales eu, sagittis sed sem. Curabitur ante turpis.
+            </p>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>explicar a diferença entre os títulos</li>
+              <li>abordadas as análises que foram realizadas durante a pesquisa</li>
+              <li>usar definições claras</li>
+              <li>citar outros autores</li>
+              <li>lembrando que devemos seguir a norma NBR-6023/2002 da ABNT</li>
+              <li>Utilize tabelas, gráficos e figuras</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
+          <h3>DESENVOLVIMENTO</h3>
+
+          <div class="formatacao" contenteditable="true">
+            <h2>3. CITAÇÃO LONGA E CURTA</h2>
+            <p class="texto-padrao">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+              sagittis ornare risus non ultricies. Aliquam sed ullamcorper leo, ut mollis justo.
+            </p>
+            <p class="texto-padrao citacao-longa">
+              <span class="destaque">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+                sagittis ornare risus non ultricies. Aliquam sed ullamcorper leo, ut mollis justo. Etiam in orci semper,
+                imperdiet felis in, efficitur odio. Nunc venenatis vehicula nisi eget dignissim. Sed bibendum sem et neque
+                rutrum tincidunt. Donec at ligula quis nisl vestibulum vestibulum.<br />
+                (AUTOR, 2018, p. 99)
+              </span>
+            </p>
+            <p class="texto-padrao">
+              Lorem ipsum dolor sit amet,
+              <span class="destaque">
+                "consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+                sagittis ornare risus non ultricies" (AUTOR, 2018, p. 99)
+              </span>.
+            </p>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>citacões longas (+ de 3 linhas): utilizar recuo de 4cm, colocar sobrenome do autor, ano e página</li>
+              <li>citacões curtas: utilizar aspas, colocar sobrenome do autor, ano e página</li>
+              <li>use frases de outros autores a vontade, mas sempre dê os créditos</li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- <section>
           <h3>METODOLOGIA</h3>
           <p>Lorem ipsum dolor sit amet.</p>
-        </section>
+
+          <aside class="notes">
+            <ul>
+              <li>...</li>
+            </ul>
+          </aside>
+        </section> -->
 
         <section>
           <h3>CONSIDERAÇÕES FINAIS (CONCLUSÃO)</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+
+          <div class="formatacao" contenteditable="true">
+            <h2>4. CONSIDERAÇÕES FINAIS</h2>
+            <p class="texto-padrao texto-introducao">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi eget blandit tincidunt. Aliquam
+              sagittis ornare risus non ultricies. Aliquam sed ullamcorper leo, ut mollis justo. Vestibulum hendrerit, nunc
+              ac bibendum venenatis, mi purus congue nulla, gravida maximus nulla lectus non ipsum. Donec lacinia, orci
+              aliquet elementum dictum, tortor ipsum rhoncus massa, vel accumsan massa libero non lacus. Fusce nec lorem eu
+              massa viverra condimentum quis at metus. Etiam porta varius metus ut ultrices.
+            </p>
+            <p class="texto-padrao texto-introducao">
+              Etiam in orci semper, imperdiet felis in, efficitur odio. Nunc venenatis vehicula nisi eget dignissim. Sed
+              bibendum sem et neque rutrum tincidunt. Donec at ligula quis nisl vestibulum vestibulum. In non sapien eros.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis erat nec justo elementum, ut
+              ultrices sem elementum. Maecenas vitae porta nisl. Sed mollis maximus gravida. In est tortor, commodo at
+              commodo ac, rhoncus quis augue. Mauris placerat ultrices neque non consectetur.
+            </p>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>titulo padrao</li>
+              <li>revisão de todo o conteúdo</li>
+              <li>uma opinião deve ser emitida para nao deixar duvidas</li>
+              <li>Destacar os principais pontos abordados</li>
+              <li>apontar a possibilidade de novas pesquisa</li>
+            </ul>
+          </aside>
         </section>
 
         <section>
           <h3>REFERÊNCIAS</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+
+          <div class="formatacao" contenteditable="true">
+            <h2>REFERÊNCIAS</h2>
+
+            <ul class="referencias">
+              <li>SOBRENOME, A. B. <strong>Nome da Obra</strong>. Cidade, ANO.</li>
+              <li>SOBRENOME, Nome. <strong>Nome da Obra</strong>. Cidade, 2018.</li>
+              <li>SIGLA, Nome da Instituição. <strong>Nome da Obra</strong>. Cidade, ANO.</li>
+            </ul>
+          </div>
+
+          <aside class="notes">
+            <ul>
+              <li>Fique atento ao padrão exigido</li>
+              <li>Ao adotar um padrão, use ele para todas referencias</li>
+              <li>Toda pesquisa tem referências, do contrário não é pesquisa</li>
+              <li>utilizar fontes cientificamente confiáveis: livros, artigos científicos, etc.</li>
+            </ul>
+          </aside>
         </section>
       </section>
 
-      <section data-background="radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), #f68d51" data-background-size="cover">
+      <section data-background="radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), #5ac9dd" data-background-size="cover">
         <h2>CONCLUSÃO</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="./img/conclusao.png" />
+
+        <aside class="notes">
+          <ul>
+            <li>...</li>
+          </ul>
+        </aside>
       </section>
 
       <section data-background="radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), #ac2325" data-background-size="cover">
         <h2>OBRIGADO!</h2>
         <p>Alguma dúvida?</p>
+        <img src="./img/duvidas.png" />
       </section>
 
       <section data-background="radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), #bb94b8" data-background-size="cover">
